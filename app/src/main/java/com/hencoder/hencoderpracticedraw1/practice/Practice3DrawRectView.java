@@ -30,6 +30,6 @@ public class Practice3DrawRectView extends View {
         int width = getWidth();
         int height = getHeight();
 
-        canvas.drawRect(width/4,height/4, width *3/4 ,height *3 /4 , mPaint);
+        canvas.drawRect(width/2 - height/4 ,height/4, width/2 + height/4 ,height *3 /4 , mPaint);
     }
 }
