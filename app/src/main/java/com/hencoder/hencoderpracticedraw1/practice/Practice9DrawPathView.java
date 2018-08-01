@@ -36,11 +36,9 @@ public class Practice9DrawPathView extends View {
         int width = getWidth();
         int height = getHeight();
 //        练习内容：使用 canvas.drawPath() 方法画心形
-        mPaint.setStyle(Paint.Style.STROKE);
-        canvas.drawRect(200,200,400,400,mPaint);
         path.addArc(200, 200, 400, 400, -225, 225);
-//        path.arcTo(400, 200, 600, 400, -180, 225, false);
-//        path.lineTo(400, 542);
+        path.arcTo(400, 200, 600, 400, -180, 225, false);
+        path.lineTo(400, 542);
         canvas.drawPath(path,mPaint);
     }
 }
